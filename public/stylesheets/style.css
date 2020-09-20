@@ -1,0 +1,122 @@
+body{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 80vw 20vw;
+            grid-template-rows: 90vh 10vh;
+        }
+
+        
+        .videoGrid {
+            background: linear-gradient(rgba(7, 6, 6, 0.829),rgb(0, 0, 0));
+            max-width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        video{
+            flex : 1 1 0;
+            width: 0;
+            margin: 5px;
+            max-width: 70%;
+            max-height: 70%;
+            object-fit: cover;
+            border : 1px red solid;
+            border-radius: 5px;
+        }
+
+        .controls {
+            background: rgba(7, 6, 6, 0.945);
+            display: flex;
+            justify-content: center;
+        }
+
+        #mute_audio,#mute_video{
+            flex : 0.1;
+        }
+
+        #leave {
+            flex : 0.2;
+            margin-left: 20%;
+        }
+
+        #leave_btn {
+            background: rgba(255, 38, 0, 0.904);
+            height: 80%;
+            width: 100px;
+            margin-right: 0;
+            margin-top: 5%;
+            border: 1px white solid;
+            border-radius: 10px;
+        }
+
+        #leave_btn:hover {
+            transform:  scale(1.1);
+        }
+
+        i{   
+            font-size: 30px !important;
+            margin-top: 15px;
+            color:white;
+        }
+
+        i:hover {
+            transform: scale(1.2);
+        }
+
+
+        hr {
+            width: 90%;
+            height: 0;
+            border: none;
+            border-top: 2px white solid;
+        }
+        
+        h4 {
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+
+        .msg {
+            background: rgba(7, 6, 6, 0.945);
+            border-left: 0.5px white solid ;
+        }
+
+        input {
+            width: 90%;
+            height: 20px;
+            margin : 15px 6px 5px 8px;
+            border: 1px red solid;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            outline: 1px blue solid !important;
+        }
+
+        .main_chat {
+            background: rgba(7, 6, 6, 0.945);
+            border-radius: 5px;
+            border: 0.5px white solid;
+            overflow: hidden;
+        }
+
+        .chat {
+            overflow: hidden;
+        }
+
+        .message {
+            color: white;
+        }
+
+        .mute {
+            color: red !important;
+        }

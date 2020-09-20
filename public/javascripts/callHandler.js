@@ -21,11 +21,11 @@ socket.on('new user',(userId)=>{
 })
 
 peer.on('call',(call) => {
-    getMedia.then((stream)=> answerToNewUser(call,stream))
+    getMedia.then((stream)=> {
+        answerToNewUser(call,stream)
+    })
 })
 
 socket.on("user-disconnected",(userId)=>{
     if(peers[userId]) peers[userId].close();
-    videoElement--;
-    videoReSize();
 })
